@@ -1,0 +1,30 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "jasmine/jasmine.d.ts": {
+      "commit": "68548c2daab053869f323d475419c693478bbb73"
+    },
+    "node/node.d.ts": {
+      "commit": "68548c2daab053869f323d475419c693478bbb73"
+    },
+    "chrome/chrome.d.ts": {
+      "commit": "68548c2daab053869f323d475419c693478bbb73"
+    },
+    "webrtc/MediaStream.d.ts": {
+      "commit": "68548c2daab053869f323d475419c693478bbb73"
+    },
+    "filewriter/filewriter.d.ts": {
+      "commit": "68548c2daab053869f323d475419c693478bbb73"
+    },
+    "filesystem/filesystem.d.ts": {
+      "commit": "68548c2daab053869f323d475419c693478bbb73"
+    },
+    "es6-promise/es6-promise.d.ts": {
+      "commit": "68548c2daab053869f323d475419c693478bbb73"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "chrome-jasmine-mock",
+  "version": "1.0.10",
+  "description": "Chrome-object mock for chrome extension testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "babel-tape-runner test.js || exit(1)",
+    "build": "babel bootstrap.js -o index.js || exit(1)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvitaly/chrome-jasmine-mock.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "jasmine",
+    "chrome",
+    "mock"
+  ],
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "author": "arvitaly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvitaly/chrome-jasmine-mock/issues"
+  },
+  "homepage": "https://github.com/arvitaly/chrome-jasmine-mock#readme",
+  "devDependencies": {
+    "jasmine": "^2.3.2"
+  },
+  "typings": "index.d.ts",
+  "dependencies": {
+    "babelify": "^6.4.0"
+  }
+}
