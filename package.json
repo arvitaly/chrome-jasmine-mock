@@ -1,6 +1,6 @@
 {
   "name": "chrome-jasmine-mock",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "description": "Chrome-object mock for chrome extension testing",
   "main": "index.js",
   "scripts": {

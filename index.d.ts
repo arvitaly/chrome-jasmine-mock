@@ -3,8 +3,18 @@ declare module ChromeJasmineMock {
         tabs: Tabs;
         runtime: Runtime;
     }
+    namespace Manifect {
+        interface ContentScript {
+            matches: Array<string>;
+            js: Array<string>;
+            run_at: string;
+        }
+        export interface Manifest {
+            content_scripts: Array<ContentScript>;
+        }
+    }
     interface ChromeStatic {
-        new (manifest?): Chrome;
+        new (manifest?: Manifect.Manifest): Chrome;
     }
     interface Runtime {
         id: string;
@@ -15,6 +25,9 @@ declare module ChromeJasmineMock {
         remove: Tabs.Remove;
         executeScript: Tabs.ExecuteScript;
         get: Tabs.Get;
+        tabs: Array<Tab>;
+        setContentScript(code: string);
+        setContentScript(code: Function);
     }
     interface Tab {
         id: number;

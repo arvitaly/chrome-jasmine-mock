@@ -28,6 +28,8 @@
     <Content Include="package.json" />
     <Content Include=".gitignore" />
     <Content Include="spec\support\jasmine.json" />
+    <Content Include=".npmignore" />
+    <Content Include="README.md" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -37,7 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="bootstrap.ts" />
-    <TypeScriptCompile Include="chrome-jasmine-mock.d.ts" />
+    <TypeScriptCompile Include="index.d.ts" />
     <TypeScriptCompile Include="lib\Chrome.ts" />
     <TypeScriptCompile Include="lib\Runtime.ts" />
     <TypeScriptCompile Include="lib\Tab.ts" />
@@ -79,11 +81,11 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
     <TypeScriptSourceMap>False</TypeScriptSourceMap>
-    <TypeScriptTarget>ES6</TypeScriptTarget>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
     <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
     <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
     <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
-    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
     <TypeScriptOutFile />
     <TypeScriptOutDir />
     <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>

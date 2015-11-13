@@ -25,6 +25,9 @@
     },
     "es6-promise/es6-promise.d.ts": {
       "commit": "68548c2daab053869f323d475419c693478bbb73"
+    },
+    "bluebird/bluebird.d.ts": {
+      "commit": "421d6610bdb09e1015b71f5991d7a68d079eca21"
     }
   }
 }
