@@ -34,6 +34,6 @@
   },
   "typings": "index.d.ts",
   "dependencies": {
-    "babelify": "^6.4.0"
+    "babelify": "^7.3.0"
   }
 }
